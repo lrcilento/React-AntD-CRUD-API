@@ -16,7 +16,7 @@ function MainPageHeader() {
             renderPage()
         }}
         title="Trabalho React"
-        subTitle="CRUD API Front-End"    
+        subTitle="CRUD API em React e Ant Design"
     />
 }
 
