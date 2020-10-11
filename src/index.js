@@ -69,7 +69,8 @@ function TaskManager() {
     var studentPendentTasks = []
 
     const selected = (e) => {
-        setSelectedTask({Id:e.target.id.substring(0, 16), Percentual:Number(e.target.id.substring(17, e.target.id.length))})
+        var data = e.target.id.split(",")
+        setSelectedTask({Id:data[0], Percentual:Number(data[1])})
         if(selectedTask.Id != '') {
             setVisible({progress:true})
         }
